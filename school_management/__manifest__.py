@@ -3,7 +3,7 @@
     'name': "school_management",
 
     'summary': """
-        STalaaaaa""",
+        STalaaaaya""",
 
     'description': """
         Long description of module's purpose
