@@ -3,7 +3,7 @@
     'name': "school_management",
 
     'summary': """
-        STalaaaaya""",
+        STalaaaaya ragh""",
 
     'description': """
        Tala's work changed by Raghad 
