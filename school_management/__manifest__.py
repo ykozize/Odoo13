@@ -1,22 +1,22 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "school_managment",
+    'name': "school_management",
 
     'summary': """
-        testttt""",
+        STalaaaaya ragh 22""",
 
     'description': """
-        Long description of module's purpose
+       Tala's work changed by Raghad 
     """,
 
-    'author': "EBTECH",
-    'website': "http://ebtechco.com",
+    'author': "My Company",
+    'website': "http://www.yourcompany.com",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/13.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
     'category': 'Uncategorized',
-    'version': '2.0',
+    'version': '1.2',
 
     # any module necessary for this one to work correctly
     'depends': ['base'],
@@ -24,7 +24,7 @@
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
-        # 'views/views.xml',
+        'views/views.xml',
         'views/templates.xml',
     ],
     # only loaded in demonstration mode
