@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <menuitem id="ebt_main_school_management_menu" name="School Management"/>
+
+        <menuitem id="ebt_structure_school_management_menu" name="Structure"
+              parent="ebt_main_school_management_menu"/>
+
+        <menuitem id="ebt_structure_school_structure_menu" name="School Structure"
+                  parent="ebt_structure_school_management_menu"
+                 action="ebt_school_structure_action"/>
+
+
+        <menuitem id="ebt_management_school_management_menu" name="Management"
+              parent="ebt_main_school_management_menu"/>
+
+        <menuitem id="ebt_properties_school_management_menu" name="Properties"
+              parent="ebt_main_school_management_menu"/>
+
+        <menuitem id="ebt_school_school_management_menu" name="School"
+              parent="ebt_main_school_management_menu"/>
+
+</odoo>
