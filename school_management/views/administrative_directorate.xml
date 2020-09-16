@@ -1,0 +1,47 @@
+<odoo>
+    <data>
+         <record model="ir.ui.view" id="ebt_administrative_directorate_view_form">
+            <field name="name">School Administrative Directorate</field>
+            <field name="model">school.administrative_directorate</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Administrative Directorate">
+                    <header>
+
+                    </header>
+                    <sheet>
+                         <group>
+                            <field name="name"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="ebt_administrative_directorate_view_tree">
+            <field name="name">School Administrative Directorate Tree</field>
+            <field name="model">school.administrative_directorate</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="ebt_administrative_directorate_action">
+            <field name="name">School Administrative Directorate</field>
+            <field name="res_model">school.administrative_directorate</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_ids" eval="[(5, 0, 0),
+                    (0, 0, {'view_mode': 'tree', 'view_id': ref('ebt_administrative_directorate_view_tree')}),
+                    (0, 0, {'view_mode': 'form', 'view_id': ref('ebt_administrative_directorate_view_form')})
+                    ]"/>
+            <field name="target">current</field>
+            <field name="domain">[]</field>
+        </record>
+
+
+
+    </data>
+</odoo>

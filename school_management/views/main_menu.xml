@@ -13,6 +13,10 @@
         <menuitem id="ebt_management_school_management_menu" name="Management"
               parent="ebt_main_school_management_menu"/>
 
+        <menuitem id="ebt_management_administrative_directorate_menu" name="Administrative Directorate"
+                  parent="ebt_management_school_management_menu"
+                 action="ebt_administrative_directorate_action"/>
+
         <menuitem id="ebt_properties_school_management_menu" name="Properties"
               parent="ebt_main_school_management_menu"/>
 
