@@ -26,6 +26,7 @@
     'data': [
         'security/security_rules.xml',
         'security/ir.model.access.csv',
+        'views/sequence.xml',
         'views/school_structure.xml',
         'views/administrative_directorate.xml',
         'views/school_assignment.xml',

@@ -12,7 +12,8 @@
                     </header>
                     <sheet>
                          <div class="oe_button_box" name="button_box">
-                            <button name="get_child_action" type="object" class="oe_stat_button" String="Structures"/>
+                            <button name="get_child_action" type="object" class="oe_stat_button" String="Structures"
+                            icon="fa-book"/>
                         </div>
                         <div class="oe_title">
                             <h1>

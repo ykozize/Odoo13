@@ -84,7 +84,7 @@ class SchoolStructure(models.Model):
     @api.model
     def create(self, vals):
         if vals.get('name', 'New') == 'New':
-            vals['name'] = self.env['ir.sequence'].next_by_code('') or '/'
+            vals['name'] = self.env['ir.sequence'].next_by_code('school_structure_name_seq') or '/'
         return super(SchoolStructure, self).create(vals)
         
     
