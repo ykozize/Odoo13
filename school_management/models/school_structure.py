@@ -23,6 +23,8 @@ class SchoolStructure(models.Model):
 
     parent_id = fields.Many2one('school.structure', string='Parent', translate=True, track_visibility='onchange',
                                  ondelete="restrict")
+    child_ids = fields.One2many('school.structure', 'parent_id', string='Structures', translate=True, track_visibility='onchange',
+                                ondelete="restrict", readonly=True)
     company_id = fields.Many2one('res.company', string='Company', translate=True, required=True,
                                  track_visibility='onchange',
                                  default=lambda self: self.env.company.id, ondelete="restrict")
