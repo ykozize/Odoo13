@@ -28,6 +28,7 @@
         'security/ir.model.access.csv',
         'views/school_structure.xml',
         'views/administrative_directorate.xml',
+        'views/school_assignment.xml',
         'views/main_menu.xml',
     ],
     # only loaded in demonstration mode

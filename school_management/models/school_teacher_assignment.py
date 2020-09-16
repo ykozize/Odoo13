@@ -29,3 +29,10 @@ class SchoolTeacherAssignment(models.Model):
         ('administrative_employee', 'Administrative Employee'),
         ('secret_keeper', 'Secret Keeper')
     ], track_visibility='onchange', string="Position", store=True, required=True)
+
+    @api.onchange('employee_id')
+    def domain_employee(self):
+        employees = []
+        employee_assignments = self.env['school.assignment'].mapped('employee_id').ids
+        employees = self.env['hr.employee'].search([('id', 'not in', 'employee_assignments')]).ids
+        return {'domain': {'employee_id': [('id', 'in', employees)]}}
