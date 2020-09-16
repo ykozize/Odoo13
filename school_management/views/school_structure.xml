@@ -7,7 +7,9 @@
             <field name="arch" type="xml">
                 <form string="School Structure">
                     <header>
-
+                        <button type="action" name="%('ebt_school_structure_assignment_action')d"
+                                class="oe_stat_button">
+                        </button>
                     </header>
                     <sheet>
                         <div class="oe_title">

@@ -49,6 +49,11 @@ class SchoolStructure(models.Model):
                                         translate=True, track_visibility='onchange')
     school_email = fields.Char(string='Email', required=False, copy=True, track_visibility='onchange')
     school_website = fields.Char(string='Website', required=False, copy=True, track_visibility='onchange')
+    assignment_ids = fields.One2many('school.assignment','school_id',translate=True,
+                                     track_visibility='onchange')
+    # physical_structure_ids
+    # academic_year_ids
+    # rule_ids
 
     @api.onchange('principal_id')
     def domain_principal(self):
