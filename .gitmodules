@@ -1,0 +1,4 @@
+[submodule "tala-hjaij/asset_management"]
+	path = tala-hjaij/asset_management
+	url = git@github.com:tala-hjaij/asset_management.git
+	branch = master
